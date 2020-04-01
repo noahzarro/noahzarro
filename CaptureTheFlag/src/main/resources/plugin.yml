@@ -1,3 +1,11 @@
 main: me.attila.ctf.App
 name: CaptureTheFlag
 version: 0.1
+
+commands:
+   addFlag:
+      description: Register flag base location
+      usage: /addFlag team_number
+   setTeam:
+      description: Set own team
+      usage: /setTeam team_number

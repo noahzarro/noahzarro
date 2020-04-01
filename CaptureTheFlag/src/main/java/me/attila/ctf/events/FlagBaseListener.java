@@ -10,8 +10,10 @@ public class FlagBaseListener implements Listener {
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         Block clickedBlock = event.getClickedBlock();
-        if (clickedBlock.getType() == Material.BEDROCK) {
-            event.getPlayer().sendMessage("Bedrock clicked at X = " + clickedBlock.getX());
+        if (clickedBlock != null) {
+            if (clickedBlock.getType() == Material.BEDROCK) {
+                event.getPlayer().sendMessage("Bedrock clicked at X = " + clickedBlock.getX());
+            }
         }
     }
 }

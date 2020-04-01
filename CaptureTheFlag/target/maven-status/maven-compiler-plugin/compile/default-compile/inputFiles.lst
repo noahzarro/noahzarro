@@ -1,2 +1,10 @@
 c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\events\FlagBaseListener.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\logic\PlayerObject.java
 c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\App.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\commands\SetTeam.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\logic\PlayerHandler.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\logic\FlagBlock.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\commands\AddFlag.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\events\FlagBreakListener.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\events\InventoryClickListener.java
+c:\Temp\Minecraft_Plugin\CaptureTheFlag\src\main\java\me\attila\ctf\logic\FlagBlockHandler.java

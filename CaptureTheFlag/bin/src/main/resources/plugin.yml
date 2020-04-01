@@ -6,6 +6,3 @@ commands:
    addFlag:
       description: Register flag base location
       usage: /addFlag team_number
-   setTeam:
-      description: Set own team
-      usage: /setTeam team_number
