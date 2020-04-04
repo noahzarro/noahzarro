@@ -25,6 +25,12 @@ public class FlagBlock {
         this.has_flag = false;
     }
 
+    public FlagBlock(int x, int y, int z, Material color) {
+        this.is_set = false;
+        this.has_flag = false;
+        setPosition(x, y, z, color);
+    }
+
     public void setPosition(int x, int y, int z, Material color) {
         this.x = x;
         this.y = y;
@@ -33,7 +39,9 @@ public class FlagBlock {
         this.is_set = true;
         this.has_flag = true;
 
-        addVisualFlag(color);
+        if (color != Material.WHITE_BANNER) {
+            addVisualFlag(color);
+        }
     }
 
     public void removeFlag() {

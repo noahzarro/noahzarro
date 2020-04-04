@@ -25,6 +25,7 @@ public class FlagBreakListener implements Listener {
 
     @EventHandler
     public void onBlockBreak​(BlockBreakEvent event) {
+        // * check if it is a flag
         int flag_team = this.flagBlockHandler.getTeamNumber(event.getBlock().getX(), event.getBlock().getY() - 1,
                 event.getBlock().getZ());
         if (flag_team != -1) {
@@ -44,12 +45,18 @@ public class FlagBreakListener implements Listener {
                 }
                 ItemStack new_helmet = new ItemStack(this.flagBlockHandler.getFlagMaterial(flag_team));
                 new_helmet.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 1);
-                //event.getPlayer().getInventory().addItem(new_helmet);
                 event.getPlayer().getInventory().setHelmet(new_helmet);
                 Bukkit.getServer().broadcastMessage("D flagge vom team " + this.flagBlockHandler.getFlagColor(flag_team)
                         + " isch vom team " + this.flagBlockHandler.getFlagColor(player_team) + " gkluppet worde");
             }
 
+        }
+
+        // check if it is the flag stand
+        int flag_stand_number = this.flagBlockHandler.getTeamNumber(event.getBlock().getX(), event.getBlock().getY(), event.getBlock().getZ());
+        if (flag_stand_number != -1){
+            event.setCancelled(true);
+            event.getPlayer().sendMessage("Du bisch doch en abartige vollasi. Es wird sicher nöd de flaggeblock abbaue!");
         }
     }
 }
